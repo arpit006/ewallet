@@ -1,0 +1,11 @@
+ALTER TABLE user_details
+  ADD COLUMN created_by CHARACTER VARYING,
+  ADD COLUMN created TIMESTAMP,
+  ADD COLUMN last_modified_by CHARACTER VARYING,
+  ADD COLUMN last_modified TIMESTAMP;
+
+ALTER TABLE transactions
+  ADD COLUMN created_by CHARACTER VARYING,
+  ADD COLUMN created TIMESTAMP,
+  ADD COLUMN last_modified_by CHARACTER VARYING,
+  ADD COLUMN last_modified TIMESTAMP;

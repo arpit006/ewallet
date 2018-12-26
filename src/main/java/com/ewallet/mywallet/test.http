@@ -1,0 +1,93 @@
+POST http://localhost:8080/ewallet
+Content-Type: application/json
+
+{
+  "name": "Arpit Srivastava",
+  "mobileNo": "7017572709",
+  "userName": "arpit",
+  "email": "arpit.srivastava@navis.com",
+  "walletBalance": 100000,
+  "password": "hello123"
+}
+
+###
+
+POST http://localhost:8080/ewallet
+Content-Type: application/json
+
+{
+  "name": "Prateek Kansal",
+  "mobileNo": "9999578543",
+  "userName": "kansal",
+  "email": "iprateekkansal@gmail.com",
+  "walletBalance": 24000,
+  "password": "hello123"
+
+}
+
+###
+
+POST http://localhost:8080/ewallet
+Content-Type: application/json
+
+{
+  "name": "Shivam Srivastava",
+  "mobileNo": "7017571706",
+  "userName": "machine",
+  "email": "shivam242628@gmail.com",
+  "walletBalance": 38000,
+  "password": "hello123"
+
+}
+
+###
+
+POST http://localhost:8080/ewallet
+Content-Type: application/json
+
+{
+  "name": "Prabal Rastogi",
+  "mobileNo": "9044309739",
+  "userName": "baba",
+  "email": "rkstr@gmail.com",
+  "walletBalance": 500000,
+  "password": "hello123"
+
+}
+
+###
+
+GET http://localhost:8080/ewallet/username/arpit
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/ewallet/mobileno/7017572709
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/ewallet/username/arpit
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/ewallet/mobileno/7017572709
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/ewallet
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/transactions/arpit
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/ewallet/username/baba
+Content-Type: application/json
+
+###
