@@ -58,8 +58,14 @@ dependencies {
     testCompile('io.projectreactor:reactor-test')
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.2.0'
 
-    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.1.2.RELEASE'
+   /* compile group: 'com.auth0', name: 'java-jwt', version: '2.0.1'
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("io.jsonwebtoken:jjwt:0.7.0")
 
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.1.2.RELEASE'
+    compile group: 'org.springframework.security.oauth.boot', name: 'spring-security-oauth2-autoconfigure', version: '2.1.1.RELEASE'
+    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.3.4.RELEASE'
+*/
     runtime('org.postgresql:postgresql')
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'

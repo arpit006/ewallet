@@ -21,7 +21,7 @@ public class TransactionsController {
         return iTransactionsService.showTransactionsByUSerName(userName);
     }
     @GetMapping
-    Flux<List<TransactionsVo>> showAllTransactions() {
+    Flux<TransactionsVo> showAllTransactions() {
         return iTransactionsService.showAllTransactions();
     }
 }

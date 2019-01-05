@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+//@EnableOAuth2Client
 public class EWalletApplication {
 
 	public static void main(String[] args) {

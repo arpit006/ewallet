@@ -13,9 +13,6 @@ public class UserConverter {
      */
 
     public UserDetails convertVoToEntity(UserDetailsVo userDetailsVo) {
-        /*String plainTextPassword = userDetailsVo.getPassword();
-        String gensalt = BCrypt.gensalt();
-        String hashed = BCrypt.hashpw(plainTextPassword, gensalt);*/
         UserDetails userDetails = new UserDetails();
         userDetails.setName(userDetailsVo.getName());
         userDetails.setMobileNo(userDetailsVo.getMobileNo());

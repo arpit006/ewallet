@@ -16,3 +16,15 @@ spring:
     out-of-order: true
     baselineOnMigrate: true
 
+security:
+  oauth2:
+    client:
+      clientId: ClientId
+      clientSecret: secret
+      accessTokenUri: http://localhost:8080/auth/oauth/token
+      userAuthorizationUri: http://localhost:8080/auth/oauth/authorize
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: htt[://localhost:8080/*

@@ -145,4 +145,8 @@ class UserIntegrationSpec extends AbstractIntegrationSpec {
         jsonResponse.mobileNo == "123"
 
     }
+
+    def "Login a user with correct credentials"() {
+
+    }
 }

@@ -17,7 +17,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 @Service
-public class UserService implements IUserService {
+public class UserDetailsService implements IUserService {
 
     @Autowired
     private UserRepository userRepository;

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class TransactionsServiceImpl implements ITransactionsService {
+public class TransactionsService implements ITransactionsService {
 
     @Autowired
     private TransactionsRepository transactionsRepository;
@@ -35,12 +35,14 @@ public class TransactionsServiceImpl implements ITransactionsService {
     }
 
     @Override
-    public Flux<List<TransactionsVo>> showAllTransactions() {
+    public Flux<TransactionsVo> showAllTransactions() {
         List<Transactions> transactions = transactionsRepository.findAll();
         List<TransactionsVo> transactionsVos = new ArrayList<>();
         for (Transactions t : transactions) {
             transactionsVos.add(transactionsConverter.convertEntityToVO(t));
         }
-        return Flux.just(transactionsVos);
+       return Flux.fromIterable(transactionsVos);
+
+
     }
 }

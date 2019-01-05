@@ -9,5 +9,5 @@ public interface ITransactionsService {
 
     Flux<List<TransactionsVo>> showTransactionsByUSerName(String userName);
 
-    Flux<List<TransactionsVo>> showAllTransactions();
+    Flux<TransactionsVo> showAllTransactions();
 }
